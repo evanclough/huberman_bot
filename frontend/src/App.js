@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import ChatWindow from './components/ChatWindow';
+import "./styles/ChatWindow.css"
 
 function App() {
   return (
     <Container className="App">
-      <h1>Custom Chatbot</h1>
       <ChatWindow />
     </Container>
   );

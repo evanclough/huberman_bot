@@ -1,0 +1,62 @@
+/* ChatWindow.css */
+
+.header {
+    text-align: center;
+    margin-top: 20px;
+    border: #000000;
+    border-bottom-width: 2px;
+  }
+
+.chat-window {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .chat-header {
+    margin-top: 20px; /* Add some space above the header */
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  .message-container {
+    flex-grow: 1;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .input-container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:20vh;
+  }
+  
+  .input-container form {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  .input-container input {
+    flex-grow: 1;
+    border: none;
+    padding: 5px;
+  }
+  
+  .input-container button {
+    min-width: 100px;
+    margin-left: 10px;
+  }
+  
