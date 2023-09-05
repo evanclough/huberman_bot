@@ -19,7 +19,7 @@ const ChatWindow = () => {
     setInputText('');
 
     try {
-      const response = await axios.post('/submitQuestion', { question: inputText });
+      const response = await axios.post('http://127.0.0.1:5000/submitQuestion', { question: inputText},{headers: {"Authorization": "Bearer balls12345"}});
       const botMessage = { text: response.data.message, isUser: false };
       setMessages((prevMessages) => [...prevMessages, botMessage]);
     } catch (error) {
@@ -29,8 +29,9 @@ const ChatWindow = () => {
 
   return (
     <Container className="chat-window">
-      <Header title="Custom Chatbot" />
+      <Header title="Huberman Bot" />
       <div className="message-container">
+        <Message key={-1} text={"How can I help you today?"} isUser={false}/>
         {messages.map((message, index) => (
           <Message key={index} text={message.text} isUser={message.isUser} />
         ))}

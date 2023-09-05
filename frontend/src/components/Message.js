@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 const Message = ({ text, isUser }) => {
   return (
     <Card className={`message ${isUser ? 'user-message' : 'bot-message'}`}>
-      <Card.Body>{text}</Card.Body>
+      <Card.Body><b>{isUser ? "User: " : "Bot: "}</b>{text}</Card.Body>
     </Card>
   );
 };
