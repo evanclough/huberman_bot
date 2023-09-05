@@ -58,7 +58,7 @@ def submit_question():
         query = data['question']
         global chat_history
         global chain
-        result = chain({"question": query, "chat_history": chat_history})
+        result = chain({"question": f"what would dr. andrew huberman 's answer be if i asked him the following question: {query}", "chat_history": chat_history})
         chat_history.append((query, result['answer']))
 
         return jsonify({'message': result['answer']})
