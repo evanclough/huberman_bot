@@ -1,3 +1,4 @@
 # huberman_bot
-Chatbot using context of transcripts from Andrew Huberman's podcast. Useful for questions regarding health, sleep, and general self-improvement. Made with the intention of learning how to use LangChain.
-To run locally, you'll need an openAI api key, and to paste the information you want to use as context into the data.txt file int he backend.
+GPT-3.5 based Chatbot using context of transcripts from Andrew Huberman's podcast. uCan be useful for questions regarding health, sleep, and general self-improvement. Made with the intention of learning how to use LangChain.
+
+To run locally, you'll first have to select the Andrew Huberman context that you want - I found success with both full transcripts, and multiple different summaries of many of his podcast episodes. You'll also need an OpenAI key with some credits, which you can put in a .env file in the backend. To start the backend, just run the main server file, to start the frontend, run npm start in the front end directory. You also may have to prompt engineer a bit to have success - GPT-3.5 someitmes is hesitant to answer questions on this subject. The little preface I put to the user question worked well enough for me, but it can surely be improved.
